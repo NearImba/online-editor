@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>掌门科技</title>
+    <!-- style.css 为默认构建的css链接 -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="app"></div>
+    <script data-main="index.js" src='https://requirejs.org/docs/release/2.3.6/minified/require.js'></script>
+    <!-- index.js 为默认构建的js链接 -->
+    <script>
+        requirejs.config({
+            paths: {
+                'react': 'https://static.zhangmen.com/cdn/react.production.min',
+                'react-dom': 'https://static.zhangmen.com/cdn/react-dom.production.min',
+            }
+        });
+    </script>
+    <!-- <script src="index.js"></script> -->
+</body>
+
+</html>
